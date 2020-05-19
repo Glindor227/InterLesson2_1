@@ -1,7 +1,8 @@
 package Report;
 
 import java.util.*;
-class PrintReport{
+class PrintReport implements StrategyReport{
+	@Override
 	public void output(List<ReportItem> items){
 		System.out.println("Output to printer");
 		for(ReportItem item : items){
